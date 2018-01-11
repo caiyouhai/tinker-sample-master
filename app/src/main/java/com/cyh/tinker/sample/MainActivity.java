@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getStrText(){
-//        return "这个APP有bug";
-        return "这个APP的bug已修复";
+        return "这个APP有bug";
+//        return "这个APP的bug已修复";
     }
 }

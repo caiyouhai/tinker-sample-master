@@ -3,6 +3,7 @@ package com.cyh.tinker.sample;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getStrText(){
+        Log.i("tag","这个APP有bug");
         return "这个APP有bug";
 //        return "这个APP的bug已修复";
     }

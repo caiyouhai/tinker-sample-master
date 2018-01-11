@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.cyh.tinker.sample.tinker.Utils;
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
         text.setText(getStrText());
 
+    }
+
+    //Tinker相关配置
+    protected void onResume() {
+        super.onResume();
+        Utils.setBackground(false);
+
+    }
+
+    //Tinker相关配置
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Utils.setBackground(true);
     }
 
     private String getStrText(){
